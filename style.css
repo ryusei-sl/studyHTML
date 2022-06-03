@@ -78,7 +78,6 @@ a {
   justify-content: center;
   align-items: center;
   grid-template-columns: 30vw 30vw;
-  height: 100vh;
   row-gap: 16px;
   column-gap: 48px;
 }
@@ -114,7 +113,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
+  width: auto;
   margin: 0 auto;
 }
 .form > button {
@@ -164,14 +163,12 @@ footer {
     color: #312e81;
     margin: 0;
     padding: 16px 0;
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .recommend {
-    height: auto;
-    width: auto;
   }
   .recommend-list {
-    grid-template-columns: 70vw;
+    grid-template-columns: 120px 120px;
     row-gap: 4px;
   }
 
