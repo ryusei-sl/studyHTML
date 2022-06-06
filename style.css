@@ -62,6 +62,7 @@ a:hover {
 
 .material-symbols-outlined {
   display: none;
+  color: #000;
 }
 
 .hero {
@@ -127,7 +128,7 @@ a:hover {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 30vw 30vw;
+  grid-template-columns: 40vw 40vw;
   row-gap: 16px;
   column-gap: 48px;
 }
@@ -143,13 +144,13 @@ a:hover {
   padding: 8px;
 }
 .recommend-items > h3 {
-  margin: 1em 0 0.5em;
-  font-size: clamp(12px, 2vw, 20px);
+  margin: 0.8em 0 0.5em;
+  font-size: clamp(14px, 2vw, 24px);
   min-height: 0vw;
 }
 .recommend-items > p {
   max-width: 20em;
-  font-size: clamp(10px, 1.6vw, 14px);
+  font-size: clamp(12px, 1.6vw, 18px);
   min-height: 0vw;
   text-align: center;
 }
@@ -266,16 +267,8 @@ footer {
   }
   /*  */
 
-  .section-title {
-    text-align: center;
-    color: #312e81;
-    margin: 0;
-    padding: 16px 0;
-    font-size: 2.5rem;
-  }
-
   .recommend-list {
-    grid-template-columns: 320px;
+    grid-template-columns: 70vw;
     row-gap: 8px;
     justify-items: center;
   }
