@@ -24,34 +24,44 @@
     <title>studyHTML</title>
   </head>
   <body>
-    <header class="header-container">
-      <div>
-        <h1 class="header-logo"><a href="./index.html">MTC</a></h1>
+    <header class="header">
+      <div class="header-container w-container">
+        <a href="index.html"
+          ><img src="./public/Logo.svg" alt="logo" width="135" height="26"
+        /></a>
+        <!-- スマホ用アイコン -->
+        <button
+          class="nav-btn"
+          onclick="document.querySelector('html').classList.toggle('open')"
+        >
+          <span class="material-symbols-outlined nav-open"> menu </span>
+          <span class="material-symbols-outlined nav-close"> close </span>
+        </button>
+
+        <!--  -->
+        <nav class="nav">
+          <ul class="nav-items">
+            <li><a href="#CONTACT">CONTACT</a></li>
+            <li><a href="#ITEMS">ITEMS</a></li>
+            <li><a id="special" href="#">SPECIAL</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul class="nav-items">
-          <li><a href="#CONTACT">CONTACT</a></li>
-          <li><a href="#ITEMS">ITEMS</a></li>
-          <li><a id="special" href="#">SPECIAL</a></li>
-        </ul>
-      </nav>
-      <!-- スマホ用アイコン -->
-      <span class="material-symbols-outlined"
-        ><a href="#CONTACT"> mail</a>
-      </span>
-      <span class="material-symbols-outlined">
-        <a href="#ITEMS">local_cafe</a>
-      </span>
     </header>
 
     <main>
-      <div class="hero-container">
-        <h1 class="hero-title">Minna no Tamariba Coffee</h1>
-        <div class="hero-image"></div>
-      </div>
+      <section class="hero">
+        <div class="hero-container w-container">
+          <h1>Sample Coffee</h1>
+          <p>
+            このサイトはサンプルサイトです<br />登録ボタンを押しても何も起こりません
+          </p>
+          <a href="#" class="btn">登録する</a>
+        </div>
+      </section>
 
       <div class="recommend" id="ITEMS">
-        <h1 class="hero-title">We recommend...</h1>
+        <h1 class="section-title">We recommend...</h1>
         <div class="recommend-list">
           <div class="recommend-items">
             <img class="items-image" src="./public/coffeecup.png" />
@@ -89,9 +99,9 @@
       </div>
 
       <div class="contact" id="CONTACT">
-        <h1 class="hero-title">Contact</h1>
+        <h1 class="section-title">Contact</h1>
 
-        <form class="form" action="#">
+        <form class="form w-container" action="#">
           <div class="form-items">
             <div>
               <label for="name"> お名前</label><br />
@@ -111,10 +121,10 @@
                 placeholder="お問合せ内容"
               ></textarea>
             </div>
-            <div>
-              <input type="checkbox" id="confirm" />
-              <label for="confirm">利用規約に同意します</label>
-            </div>
+          </div>
+          <div class="policy">
+            <input type="checkbox" id="confirm" />
+            <label for="confirm">利用規約に同意します</label>
           </div>
           <button id="send" type="button">送信する</button>
         </form>
